@@ -1,1 +1,26 @@
-site_name: My Docs
+site_name: My MkDocs 
+site_url: https://tubuntu-full.github.io/mkdocs-venv101/
+
+#theme:
+#  name: material  # You can change this to 'readthedocs' if you prefer
+theme:
+  name: rtd-dropdown
+  navigation_depth: 4
+  titles_only: false
+
+nav:
+  - Home: index.md
+  - About: about.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite
+  - footnotes
+  - tables
+  - attr_list
+
+plugins:
+  - search
+  - cards
